@@ -1,18 +1,30 @@
 import java.util.*;
 
 public class AddressBook {
-    private List<BuddyInfo> Buddies;
+    private List<BuddyInfo> buddies;
 
     public AddressBook() {
-        this.Buddies = new ArrayList<>();
+        this.buddies = new ArrayList<>();
     }
-    public void addBuddy(List<BuddyInfo> Buddy){
-        this.Buddies.add((BuddyInfo) Buddy);
+
+    // Add a single buddy
+    public void addBuddy(BuddyInfo buddy) {
+        this.buddies.add(buddy);
     }
-    public void removeBuddy(List<BuddyInfo> Buddy){
-        this.Buddies.remove((BuddyInfo) Buddy);
+
+    // Remove a single buddy
+    public void removeBuddy(BuddyInfo buddy) {
+        this.buddies.remove(buddy);
     }
+
     public static void main(String[] args) {
         System.out.println("Address Book!");
+
+        BuddyInfo buddy = new BuddyInfo("John Doe");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
+
+
