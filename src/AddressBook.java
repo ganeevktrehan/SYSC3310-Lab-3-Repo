@@ -4,7 +4,7 @@ public class AddressBook {
     private List<BuddyInfo> buddies;
 
     public AddressBook() {
-        this.buddies = new ArrayList<>();
+        this.buddies = new ArrayList<BuddyInfo>();
     }
 
     // Add a single buddy
@@ -24,6 +24,8 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
+
+        System.out.println("hi");
     }
 }
 
