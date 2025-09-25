@@ -27,10 +27,11 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo("John Doe");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
+        System.out.println("buddy added!");
         addressBook.removeBuddy(0);
+        System.out.println("buddy removed!");
 
-        System.out.println("Hi, how are you);
-
+        //write todo
     }
 }
 
