@@ -30,6 +30,8 @@ public class AddressBook {
         System.out.println("buddy added!");
         addressBook.removeBuddy(0);
         System.out.println("buddy removed!");
+
+        //write todo
     }
 }
 
